@@ -18,9 +18,7 @@ const theme = createTheme({
 function MyApp({ Component, pageProps }: AppProps) {
   return (
     <>
-    <Head>
-          <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet" />
-        </Head>
+    
     <ThemeProvider theme={theme}>
      <Component {...pageProps} />
     </ThemeProvider>
