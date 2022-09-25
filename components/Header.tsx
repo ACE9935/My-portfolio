@@ -48,9 +48,9 @@ function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
                  <Stack component='ul' sx={{
                    display:{xs:'none',md:'flex'}
                  }} direction='row' spacing={0}>
-                    {['Bio','Skills','Contact'].map(i=><AppBarItem key={i} href={'#'+i} component='a'
+                    {['Bio','Skills','Contact'].map(i=><AppBarItem key={i}
                     className='font-[600] text-white cursor-pointer flex items-center px-4 relative'>
-                        {i}</AppBarItem>)}
+                        <a href={'#'+i}>{i}</a></AppBarItem>)}
                  </Stack>
                  <IconButton
                  onClick={()=>setOpen(true)}
