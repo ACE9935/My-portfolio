@@ -21,7 +21,7 @@ function SectionOne() {
         animate='visible'
         initial='hidden'
         className="relative px-5 translate-y-[-4rem] sm:translate-y-0 p-5 z-[2] w-full max-w-[40rem]">
-        <motion.h1 variants={item} className='pb-6 text-[calc(2.5rem+1vw)] text-white leading-[1.25] font-bold'>HI, I'M <span className="text-amber-500">ANAS</span>.<br/> A CREATIVE DEVELOPER WITH CREATIVE IDEAS
+        <motion.h1 variants={item} className='pb-6 text-[calc(2.5rem+1vw)] text-white leading-[1.25] font-bold'>HI, I&apos;M <span className="text-amber-500">ANAS</span>.<br/> A CREATIVE DEVELOPER WITH CREATIVE IDEAS
         </motion.h1>
         <motion.p variants={item} className='text-[1.7rem] font-bold'>
          DESIGN <span className="inline-block aspect-[1/1] w-[calc(1rem+0.1vw)] bg-amber-500 rounded-full"></span> DEVELOPMENT <span className="inline-block aspect-[1/1] w-[calc(1rem+0.1vw)] bg-amber-500 rounded-full"></span> FULLSTACK

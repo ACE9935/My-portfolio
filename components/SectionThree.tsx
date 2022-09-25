@@ -48,7 +48,7 @@ Design</Typography></Box>
           Not to forget the amount of frameworks and libraries I use which makes my coding experience more enjoyable and thus results in better results.
           <br/>
           <br/>
-          But the most important thing I take care of in my projects is the consistent look of my website across all devices, this crucial aspect, called responsiveness, is really what elevates the user's experience, that's why I give it slightly more importance in my projects.
+          But the most important thing I take care of in my projects is the consistent look of my website across all devices, this crucial aspect, called responsiveness, is really what elevates the user&apos;s experience, that&apos;s why I give it slightly more importance in my projects.
             </Typography>
           </Box>
         </Box>
