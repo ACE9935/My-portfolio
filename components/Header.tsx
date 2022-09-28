@@ -56,7 +56,7 @@ function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
                  onClick={()=>setOpen(true)}
                  sx={{color:'orange',alignSelf:'center',display:{
                  md:'none'
-                 }}}><MenuIcon sx={{fontSize:37}}></MenuIcon></IconButton>
+                 }}}><MenuIcon sx={{fontSize:'37px !important'}}></MenuIcon></IconButton>
             </Toolbar>
         </Container>
        </AppBar>
