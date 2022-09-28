@@ -24,8 +24,8 @@ gsap.registerPlugin(ScrollTrigger);
         <section id='Bio' className="sx bg-mediumBlue grid place-items-center">
           <section className="sx-22 px-6 py-16 xl:py-0 w-full max-w-[78rem] grid space-y-14">
          <Box sx={{boxShadow:'80px -50px 0px -15px #89AAC3'}} className="z-[5] min-h-[22rem] flex items-center relative lg:top-[10rem] bg-lBlack w-full max-w-[38rem] p-4 py-10 bg-lBlack">
-          <Typography component='div' className="text-white text-xl">
-          <Typography gutterBottom className='font-bold text-4xl text-amber-500'>Who am I?</Typography>
+          <Typography component='div' className="text-white !text-xl">
+          <Typography gutterBottom className='font-bold !text-4xl text-amber-500'>Who am I?</Typography>
           My name is Anas and I’m a part-time full-stack web developer specialized in front-end technologies.
 I specialise in creating minimalist, clean and high-converting user experiences for web and mobile.
 I am very passionate about improving web design and continuously learning new things to ensure I offer you the best.
@@ -43,8 +43,8 @@ I am very passionate about improving web design and continuously learning new th
          </Box>
          </Box>
          <Box sx={{boxShadow:'80px -50px 0px -15px #89AAC3'}} className="relative lg:top-[-10rem] bg-lBlack w-full max-w-[38rem] p-4 py-10 bg-lBlack">
-          <Typography component='div' className="text-white text-xl">
-          <Typography gutterBottom className='font-bold text-4xl text-amber-500'>Who did I learn programming?</Typography>
+          <Typography component='div' className="text-white !text-xl">
+          <Typography gutterBottom className='font-bold !text-4xl text-amber-500'>Who did I learn programming?</Typography>
           My knowledge af programming comes mainly from self-learning and online resources, and with the help of the internet and my determination and my motivation I was able to acquire a set of good and valuable skills in the world of web development.
           <br/> 
           <br/>

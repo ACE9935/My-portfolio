@@ -27,7 +27,7 @@ function AnimateText(props:{text:string,className:string}) {
     let newArray=props.text.split(' ')
     const newChildren=newArray.map((o,index)=>{
     if(index==1) return <> <span className="inline-block aspect-[1/1] w-[0.48em] bg-amber-500 rounded-full translate-y-[-110%]"></span> <motion.span style={{ display: "inline-block" }} className='overflow-hidden' variants={item}>{o}</motion.span> <span className="inline-block aspect-[1/1] w-[0.48em] bg-amber-500 rounded-full translate-y-[-110%]"></span> </>
-   else return <motion.span key={o} style={{ display: "inline-block" }} className='overflow-hidden' variants={item}>{o}</motion.span>
+   else return <motion.span style={{ display: "inline-block" }} className='overflow-hidden' variants={item}>{o}</motion.span>
     })
 
     return ( 
