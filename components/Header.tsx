@@ -41,7 +41,7 @@ function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
 
     return ( 
         <HideOnScroll>
-       <AppBar className='z-[10] bg-lBlack'>
+       <AppBar className='z-[10] !bg-lBlack'>
         <Container>
             <Toolbar sx={{justifyContent:'space-between',alignItems:'unset'}}>
                 <AppLogo/>
