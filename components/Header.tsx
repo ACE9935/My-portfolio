@@ -50,7 +50,7 @@ function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
                  }} direction='row' spacing={0}>
                     {['Bio','Skills','Contact'].map(i=><AppBarItem key={i}
                     className='font-[600] text-white cursor-pointer flex items-center px-4 relative'>
-                        <a href={'#'+i}>{i}</a></AppBarItem>)}
+                        <a href={'#'+i} className='w-full h-full grid place-items-center'>{i}</a></AppBarItem>)}
                  </Stack>
                  <IconButton
                  onClick={()=>setOpen(true)}
