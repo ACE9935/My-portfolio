@@ -26,14 +26,14 @@ function FullAppBar({setOpen,open}:{setOpen: React.Dispatch<SetStateAction<boole
         <AnimatePresence>
         {open &&
         <motion.div
-        className='!z-50 !w-screen h-screen !flex !flex-col fixed bg-[rgba(0,0,0,0.8)] backdrop-blur-md'
+        className='!z-50 !w-screen !h-screen !flex !flex-col !fixed bg-[rgba(0,0,0,0.8)] backdrop-blur-md'
         exit={{opacity:0,transition:{duration:0.6}}}
         initial={{opacity:0}}
         animate={{opacity:1,transition:{duration:0.6}}}
         >
          <div style={{direction:'rtl'}}><IconButton
          onClick={()=>fadingAnimation(ref)}
-         color='primary' className="m-2"><CloseIcon className='text-[3rem]'/></IconButton></div>
+         color='primary' className="!m-2"><CloseIcon className='text-[3rem]'/></IconButton></div>
          <Box ref={ref} className="!flex !flex-col !items-center !space-y-3 !justify-center">
          <AppLogo/>
          <List className="!w-full !max-w-[50rem]">
