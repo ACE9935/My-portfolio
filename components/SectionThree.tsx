@@ -31,19 +31,19 @@ function SectionThree() {
         </section>
         <Box className="sx-2 px-2 flex flex-col sm:flex-row space-y-[2rem] sm:space-y-0 justify-center md:space-x-[10rem]">
         <Box className="p-3 text-white w-full sm:w-[26rem] translate-y-[-3.4rem] bg-darkBlue justify-items-center grid grid-cols-3 gap-y-[2rem] sm:grid-cols-2">
-          <Box className='flex items-center justify-center flex-col space-y-3'><Web className="text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Flexible
+          <Box className='flex items-center justify-center flex-col space-y-3'><Web className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Flexible
 Layouts</Typography></Box>
-<Box className='flex items-center justify-center flex-col space-y-3'><Devices className="text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Responsive
+<Box className='flex items-center justify-center flex-col space-y-3'><Devices className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Responsive
 Design</Typography></Box>
-<Box className='flex items-center justify-center flex-col space-y-3'><Animation className="text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Cool Animations</Typography></Box>
-<Box className='flex items-center justify-center flex-col space-y-3'><Storage className="text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">API Fetching</Typography></Box>
-<Box className='flex items-center justify-center flex-col space-y-3'><Mouse className="text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Smooth Scrolling</Typography></Box>
-<Box className='flex items-center justify-center flex-col space-y-3'><ToggleOff className="text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Interactive Experience</Typography></Box>
-<Typography className='text-slate-100 text-xl col-span-3 sm:col-span-2'>And more...</Typography>
+<Box className='flex items-center justify-center flex-col space-y-3'><Animation className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Cool Animations</Typography></Box>
+<Box className='flex items-center justify-center flex-col space-y-3'><Storage className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">API Fetching</Typography></Box>
+<Box className='flex items-center justify-center flex-col space-y-3'><Mouse className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Smooth Scrolling</Typography></Box>
+<Box className='flex items-center justify-center flex-col space-y-3'><ToggleOff className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Interactive Experience</Typography></Box>
+<Typography className='text-slate-100 !text-xl col-span-3 sm:col-span-2'>And more...</Typography>
           </Box>
           <Box className="p-3 text-white sm:w-[30rem] bg-darkBlue sm:translate-y-[-3.4rem]">
-          <Typography gutterBottom className='text-4xl text-amber-500 font-bold'>My skills?</Typography>
-          <Typography className="text-lg"> 
+          <Typography gutterBottom className='!text-4xl text-amber-500 font-bold'>My skills?</Typography>
+          <Typography className="!text-lg"> 
           I specialise in both the front-end and the back-end, letting me able to create fully functional websites with high interactivity and flexibility.<br/>
           Not to forget the amount of frameworks and libraries I use which makes my coding experience more enjoyable and thus results in better results.
           <br/>
