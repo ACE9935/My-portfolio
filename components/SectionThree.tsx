@@ -35,7 +35,7 @@ function SectionThree() {
        <Skills/>
           <Box className="p-6 text-white md:w-[34rem] bg-darkBlue flex flex-col justify-center items-center space-y-4">
           <Typography gutterBottom className='!text-4xl pb-5 text-amber-500 font-bold text-center'>My projects</Typography>
-          {data.map(o=><ProjectCard {...o}/>)}
+          {data.map((o,i)=><ProjectCard key={i} {...o}/>)}
           </Box>
         </Box>
         </section>

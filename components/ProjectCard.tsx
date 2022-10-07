@@ -24,7 +24,7 @@ function ProjectCard({url,title,subt,tecs,surl}:{url:string,title:string,subt:st
         <h4 className="!text-md !text-slate-300">{subt}</h4>
            <p className="!text-sm">Technologies used: </p>
           <div className="flex flex-wrap">
-          {tecs.map(o=><Chip className="m-1 !font-bold" label={o} color="primary"/>)}
+          {tecs.map((o,i)=><Chip key={i} className="m-1 !font-bold" label={o} color="primary"/>)}
           </div>
           </div>
         </Slide>
