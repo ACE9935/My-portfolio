@@ -5,7 +5,7 @@ function Skills() {
 
     return ( 
         <Box className="p-3 sticky top-[4rem] text-white w-full md:w-[26rem] bg-darkBlue justify-items-center grid grid-cols-3 gap-y-[2rem] h-fit md:grid-cols-2">
-        <Typography gutterBottom className='!text-4xl text-amber-500 font-bold col-span-3 md:col-span-2'>My skills?</Typography>
+        <Typography gutterBottom className='!text-4xl text-amber-500 !font-bold col-span-3 md:col-span-2'>My skills?</Typography>
           <Box className='flex items-center justify-center flex-col space-y-3'><Web className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Flexible
 Layouts</Typography></Box>
 <Box className='flex items-center justify-center flex-col space-y-3'><Devices className="!text-[5rem] bg-slate-500 rounded-full p-3"/><Typography className="text-slate-200 text-center">Responsive

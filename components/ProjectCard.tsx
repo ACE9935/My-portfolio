@@ -18,7 +18,7 @@ function ProjectCard({url,title,subt,tecs,surl}:{url:string,title:string,subt:st
             zIndex:50,
             boxShadow:'0px 0px 20px 10px lightBlue'
         }}}
-        className={`bg-center bg-cover w-full aspect-[1/0.6] overflow-hidden relative cursor-pointer`} onMouseEnter={()=>setChecked(true)} onMouseLeave={()=>setChecked(false)}>
+        className={`!bg-center !bg-cover w-full aspect-[1/0.6] overflow-hidden relative cursor-pointer`} onMouseEnter={()=>setChecked(true)} onMouseLeave={()=>setChecked(false)}>
              <Slide direction="up" in={checked} mountOnEnter unmountOnExit>
             <div className="absolute bottom-0 bg-[rgba(0,0,0,0.78)] flex flex-col space-y-2 w-full p-2">
         <h4 className="!text-xl !font-bold">{title}</h4>
