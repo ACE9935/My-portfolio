@@ -25,10 +25,10 @@ function SectionThree() {
   },[])
 
     return ( 
-        <section id='Skills' className="flex flex-col md:items-center">
-        <section className="flex items-center">
-            <div className="w-full bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0)] md:hover:bg-left-top duration-1000 bg-blend-multiply aspect-[1/0.4] min-h-[30rem] bg-center bg-cover bg-[url('/exc.jpg')] flex justify-center items-center">
-            <AnimateText text='PASSION CREATIVITY INNOVATION' className='overflow-hidden text-white font-bold text-[calc(2em+2vw)] text-center'/>
+        <section id='Skills' className="flex flex-col md:items-center w-full">
+        <section className="flex items-center w-[100%]">
+            <div className="w-[100%] bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0)] md:hover:bg-left-top duration-1000 bg-blend-multiply aspect-[1/0.4] min-h-[30rem] bg-center bg-cover bg-[url('/exc.jpg')] flex justify-center items-center">
+            <AnimateText text='PASSION CREATIVITY INNOVATION' className='text-white font-bold text-[calc(1em+3vw)] text-center'/>
             </div>
         </section>
         <Box className="sx-2 px-2 flex flex-col md:flex-row md:space-y-0 space-y-[2rem] justify-between md:space-x-3 w-full max-w-[73rem]">

@@ -15,7 +15,7 @@ const container={
 function SectionOne() {
 
     return ( 
-        <section className='relative bg-mediumBlue w-screen py-[10rem]'>
+        <section className='relative bg-mediumBlue py-[10rem] w-full'>
         <motion.section
         variants={container}
         animate='visible'
