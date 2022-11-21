@@ -31,14 +31,14 @@ function SectionOne() {
         <motion.h1 variants={item} className="text-main text-[3.5rem] font-bold">Anas Elmouden</motion.h1>
         <motion.h1 variants={item} className="font-[500] pb-6 text-[1.8rem] text-white">A Creative Developer With Creative Ideas</motion.h1>
         <motion.p variants={item} className='text-[1rem] text-slate-300 pb-14 max-w-[30rem]'>
-        I'm a Full-Stack developer with years of experience full of imagination and creative ideas, I'm ready to offer my help so feel free to contact me.
+        I&apos;m a Full-Stack developer with years of experience full of imagination and creative ideas, I&apos;m ready to offer my help so feel free to contact me.
         </motion.p>
         <Button 
         onClick={handleOpen}
         sx={{
             boxShadow:'0px 8px 15px 0px #4fd78eae'
         }}
-        className="text-white font-bold bg-main hover:-translate-y-2 transition duration-50" variant="contained">Let's Talk</Button>
+        className="text-white font-bold bg-main hover:-translate-y-2 transition duration-50" variant="contained">Let&apos;s Talk</Button>
         </motion.article>
         
         <motion.img

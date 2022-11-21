@@ -30,7 +30,7 @@ gsap.registerPlugin(ScrollTrigger);
             <Box className='bg-secondary max-w-[21rem] rounded-sm p-8 flex flex-col items-center'>
             <ToggleOff className="!text-[6rem] text-main"/>
             <Typography component='h2' className="font-bold text-[1.3rem] pb-3">Interactive Experience</Typography>
-            <Typography className='text-[1rem] text-slate-300 text-center'>I'm able to deliver an interactive experience using the latest web technologies</Typography>
+            <Typography className='text-[1rem] text-slate-300 text-center'>I&apos;m able to deliver an interactive experience using the latest web technologies</Typography>
             </Box>
             <Box className='bg-secondary max-w-[21rem] rounded-sm p-8 flex flex-col items-center'>
             <Devices className="!text-[6rem] text-main"/>
