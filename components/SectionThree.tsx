@@ -7,9 +7,16 @@ import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { data } from "../projects-data";
 import ProjectCard from "./ProjectCard";
 import Skills from "./Skills";
+import { Swiper, SwiperSlide,useSwiper } from "swiper/react";
+import { EffectCoverflow, Pagination,Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/effect-coverflow";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import SwiperBar from "./SwiperBar";
 
 function SectionThree() {     
-
+  
   gsap.registerPlugin(ScrollTrigger);
   useEffect(()=>{
     document.querySelectorAll('.sx-2>*').forEach(i => {
@@ -25,19 +32,37 @@ function SectionThree() {
   },[])
 
     return ( 
-        <section id='Skills' className="flex flex-col md:items-center w-full">
-        <section className="flex items-center w-[100%]">
-            <div className="w-[100%] bg-[rgba(0,0,0,0.5)] hover:bg-[rgba(0,0,0,0)] md:hover:bg-left-top duration-1000 bg-blend-multiply aspect-[1/0.4] min-h-[30rem] bg-center bg-cover bg-[url('/exc.jpg')] flex justify-center items-center">
-            <AnimateText text='PASSION CREATIVITY INNOVATION' className='text-white font-bold text-[calc(1em+3vw)] text-center'/>
-            </div>
-        </section>
-        <Box className="sx-2 px-2 flex flex-col md:flex-row md:space-y-0 space-y-[2rem] justify-between md:space-x-3 w-full max-w-[73rem]">
-       <Skills/>
-          <Box className="p-6 text-white md:w-[34rem] bg-darkBlue flex flex-col justify-center items-center space-y-4">
-          <Typography gutterBottom className='!text-4xl pb-5 text-amber-500 !font-bold text-center'>My projects</Typography>
-          {data.map((o,i)=><ProjectCard key={i} {...o}/>)}
-          </Box>
+        <section id='Skills' className="px-6 sm:px-14 pt-14 pb-36">
+        <Box className="flex justify-center pb-12">
+          <Typography component='h1' variant='h3'>Recent <span className="text-main">Projects</span></Typography>
         </Box>
+
+       <Box>
+       <Swiper
+        initialSlide={1}
+        effect={"coverflow"}
+        grabCursor={true}
+        centeredSlides={true}
+        slidesPerView={'auto'}
+        freeMode
+        loop
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
+        modules={[EffectCoverflow, Pagination,Navigation]}
+        className="mySwiper max-w-[100rem]"
+      >
+        {data.map((o,i)=><SwiperSlide
+        key={i}
+        className='relative hover:scale-150 aspect-[1/0.6] !w-[34rem]'><ProjectCard key={i} {...o}/></SwiperSlide>)}
+         <SwiperBar/>
+      </Swiper>
+       </Box>
+
         </section>
      );
 }

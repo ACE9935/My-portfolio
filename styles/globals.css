@@ -2,19 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+
 
 html,
 body {
   padding: 0;
   margin: 0;
   width:100%;
-  background:black;
   scroll-behavior: smooth;
+  background: #36393b;
+  color:white;
+  position: relative;
 }
-
 a {
-  color: inherit;
+  color: inherit !important;
   text-decoration: none;
+}
+.fx{
+  border-radius: 150% 100px 100px 150%;
+}
+.fy{
+  border-radius: 100px 150% 150% 100px;
 }
 * {
   box-sizing: border-box;
@@ -23,12 +32,11 @@ a {
   font-family:sans-serif !important;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
+.nav-link.active {
+  color: #4fd78f !important;
+  background-color: #505c648f;
+  border-radius: 200px;
+}
+.nav-link:hover{
+  color: #4fd78f !important;
 }

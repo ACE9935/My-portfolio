@@ -4,11 +4,12 @@ import { ReactElement, useEffect, useRef } from "react";
 import Image from "next/image";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
+import { Devices, ToggleOff, Storage } from "@mui/icons-material";
 
 function SectionTwo() {
 gsap.registerPlugin(ScrollTrigger);
     useEffect(()=>{
-      document.querySelectorAll('.sx-22>*,.bx-2>*').forEach(i => {
+      document.querySelectorAll('.sc>*').forEach(i => {
 
         gsap.fromTo(i,{opacity:0},{opacity:1,duration:1.3,
           scrollTrigger:{
@@ -21,37 +22,28 @@ gsap.registerPlugin(ScrollTrigger);
 
 
     return ( 
-        <section id='Bio' className="sx bg-mediumBlue grid place-items-center">
-          <section className="sx-22 px-6 py-16 xl:py-0 w-full max-w-[78rem] grid space-y-14">
-         <Box sx={{boxShadow:'80px -50px 0px -15px #89AAC3'}} className="z-[5] min-h-[22rem] flex items-center relative lg:top-[10rem] bg-lBlack w-full max-w-[38rem] p-4 py-10 bg-lBlack">
-          <Typography component='div' className="text-white !text-xl">
-          <Typography gutterBottom className='font-bold !text-4xl text-amber-500'>Who am I?</Typography>
-          My name is Anas and I’m a part-time full-stack web developer specialized in front-end technologies.
-I specialise in creating minimalist, clean and high-converting user experiences for web and mobile.
-I am very passionate about improving web design and continuously learning new things to ensure I offer you the best.
-          <br/> 
-          <br/>
-          
-          </Typography>
-         </Box>
-         <Box className="flex bx-2 justify-end lg:flex-col space-y-12 space-x-3 w-full lg:max-w-[30rem] justify-self-end">
-         <Box className="grayscale hover:grayscale-0 transition-[filter] duration-500 relative w-full max-w-[30rem] aspect-[1/0.7]">
-          <Image src='/o1.webp' layout="fill" objectFit="cover"/>
-         </Box>
-         <Box className="grayscale hover:grayscale-0 transition-[filter] duration-500 relative w-full max-w-[20rem] aspect-[1/1]">
-          <Image src='/o2.jpg' layout="fill" objectFit="cover"/>
-         </Box>
-         </Box>
-         <Box sx={{boxShadow:'80px -50px 0px -15px #89AAC3'}} className="relative lg:top-[-10rem] bg-lBlack w-full max-w-[38rem] p-4 py-10 bg-lBlack">
-          <Typography component='div' className="text-white !text-xl">
-          <Typography gutterBottom className='font-bold !text-4xl text-amber-500'>Who did I learn programming?</Typography>
-          My knowledge af programming comes mainly from self-learning and online resources, and with the help of the internet and my determination and my motivation I was able to acquire a set of good and valuable skills in the world of web development.
-          <br/> 
-          <br/>
-          In the span of just 1.5 year, I was able to both learn and practice web development, and I got the chance to work on a number of personal projects which game me more confidence to work on bigger projects and to help others.
-          </Typography>
-         </Box>
-         </section>
+        <section id='Bio' className="p-14 pb-36 bg-dark grid place-items-center">
+          <div className="max-w-[100rem]">
+          <Typography className='text-[1.2rem] pb-2'>My <span className="text-main">skills</span></Typography>
+          <Typography component='h1' variant='h3' className="font-bold">What I do</Typography>
+          <article className="sc pt-16 w-fit grid grid-cols-1 m-auto md:grid-cols-2 lg:grid-cols-3 justify-items-center gap-[3.6rem]">
+            <Box className='bg-secondary max-w-[21rem] rounded-sm p-8 flex flex-col items-center'>
+            <ToggleOff className="!text-[6rem] text-main"/>
+            <Typography component='h2' className="font-bold text-[1.3rem] pb-3">Interactive Experience</Typography>
+            <Typography className='text-[1rem] text-slate-300 text-center'>I'm able to deliver an interactive experience using the latest web technologies</Typography>
+            </Box>
+            <Box className='bg-secondary max-w-[21rem] rounded-sm p-8 flex flex-col items-center'>
+            <Devices className="!text-[6rem] text-main"/>
+            <Typography component='h2' className="font-bold text-[1.3rem] pb-3">Responsive Design</Typography>
+            <Typography className='text-[1rem] text-slate-300 text-center'>Responsiveness is an important aspect in web development and as a web developer I always make sure that my websites responsive enough</Typography>
+            </Box>
+            <Box className='bg-secondary max-w-[21rem] rounded-sm p-8 flex flex-col items-center'>
+            <Storage className="!text-[6rem] text-main"/>
+            <Typography component='h2' className="font-bold text-[1.3rem] pb-3">Backend & API Fetching</Typography>
+            <Typography className='text-[1rem] text-slate-300 text-center'>Linking backend and frontend is what makes a website constantly updating, therefore I consider it an important step when making websites</Typography>
+            </Box>
+          </article>
+          </div>
         </section>
      );
 }

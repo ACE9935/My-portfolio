@@ -1,66 +1,46 @@
 import { Toolbar, Typography,Stack,Box,styled, useScrollTrigger, Slide, IconButton } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import { Container } from '@mui/system';
-import { ReactElement, SetStateAction, useRef } from 'react';
+import { ReactElement, SetStateAction, useEffect, useRef } from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import AppLogo from './Logo';
+
 
 interface Props {
     children:ReactElement
     handleOpenDrawer?:()=>void
   }
 
-function HideOnScroll(props: Props) {
-    const { children} = props;
-    const trigger = useScrollTrigger();
-  
-    return (
-      <Slide appear={false} direction="down" in={!trigger}>{children}</Slide>
-    );
-  }
-
 const AppBarItem = styled(Box)(({ theme }) => ({
-    ':after':{
-        content:'""',
-        zIndex:-1,
-       background:'linear-gradient(180deg,rgb(245 158 11),transparent)',
-       opacity:0,
-       position:'absolute',
-       inset:0,
-       transition:'opacity 0.3s',
-       width:'100%',
-       height:'100%',
-     },
-     ':hover:after':{
-         opacity:1,
-         transition:'opacity 0.3s'
+     ':hover':{
+         color:theme.palette.primary.main,
      }
   }));
 
 function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
 
     return ( 
-        <HideOnScroll>
-       <AppBar className='!z-[10] !bg-lBlack'>
+       <AppBar className='!z-[10] !bg-secondary shadow-none pt-6 pb-1'>
         <Container>
             <Toolbar sx={{justifyContent:'space-between',alignItems:'unset'}}>
                 <AppLogo/>
-                 <Stack component='ul' sx={{
+                 <Stack component='ul'
+                 id="navbar"
+                 sx={{
                    display:{xs:'none',md:'flex'}
                  }} direction='row' spacing={0}>
-                    {['Bio','Skills','Contact'].map(i=><AppBarItem key={i}
-                    className='font-[600] text-white cursor-pointer flex items-center px-4 relative'>
-                        <a href={'#'+i} className='w-full h-full grid place-items-center'>{i}</a></AppBarItem>)}
+                    {['Bio','Skills','Contact'].map(i=>
+                        <a key={i} href={'#'+i} className='w-full px-4 cursor-pointer text-white font-[600] nav-link h-full grid place-items-center'>{i}</a>)}
                  </Stack>
                  <IconButton
                  onClick={()=>setOpen(true)}
-                 sx={{color:'orange',alignSelf:'center',display:{
+                 sx={{color:'#4fd78f',alignSelf:'center',display:{
                  md:'none'
                  }}}><MenuIcon sx={{fontSize:'37px !important'}}></MenuIcon></IconButton>
             </Toolbar>
         </Container>
        </AppBar>
-       </HideOnScroll>
+
      );
 }
 

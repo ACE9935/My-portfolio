@@ -36,8 +36,8 @@ function FullAppBar({setOpen,open}:{setOpen: React.Dispatch<SetStateAction<boole
          color='primary' className="!m-2"><CloseIcon className='text-[3rem]'/></IconButton></div>
          <Box ref={ref} className="!flex !flex-col !items-center !space-y-3 !justify-center">
          <AppLogo/>
-         <List className="!w-full !max-w-[50rem]">
-          {['Bio','Skills','Contact'].map(i=>(<><ListItem href={'#'+i} onClick={()=>setOpen(false)} component='a' className="cursor-pointer hover:text-[orange] transition-color duration-300 text-white !text-xl !flex !justify-center !p-4">
+         <List className="!w-full flex flex-col items-center !max-w-[50rem]">
+          {['Bio','Skills','Contact'].map(i=>(<><ListItem href={'#'+i} onClick={()=>setOpen(false)} component='a' className="cursor-pointer hover:text-main w-fit transition-color duration-300 !text-xl !flex !justify-center !p-4">
             {i}
           </ListItem>
           <Divider light/></>

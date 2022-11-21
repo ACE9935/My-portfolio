@@ -3,14 +3,16 @@ import type { AppProps } from 'next/app'
 import { ThemeProvider } from '@emotion/react'
 import { createTheme } from '@mui/material/styles';
 import Head from 'next/head';
+import { Provider } from 'react-redux';
+import {store} from '../app-state/app-store'
 
 const theme = createTheme({
   palette: {
     primary:{
-      main:'#ffa500',
+      main:'#4fd78f',
     },
     secondary:{
-      main:'#ffffff'
+      main:'#36393b'
     }
   }
 });
@@ -20,7 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
     <>
     
     <ThemeProvider theme={theme}>
+    <Provider store={store}>
      <Component {...pageProps} />
+     </Provider>
     </ThemeProvider>
     </>
     )
