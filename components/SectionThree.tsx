@@ -32,7 +32,7 @@ function SectionThree() {
   },[])
 
     return ( 
-        <section id='Skills' className="px-6 sm:px-14 pt-14 pb-36">
+        <section id='Skills' className="px-6 sm:px-14 pt-14 pb-36 carousel-container">
         <Box className="flex justify-center pb-12">
           <Typography component='h1' variant='h3'>Recent <span className="text-main">Projects</span></Typography>
         </Box>
@@ -46,6 +46,7 @@ function SectionThree() {
         slidesPerView={'auto'}
         freeMode
         loop
+        autoplay
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
@@ -58,11 +59,13 @@ function SectionThree() {
       >
         {data.map((o,i)=><SwiperSlide
         key={i}
-        className='relative hover:scale-150 aspect-[1/0.6] !w-[34rem]'><ProjectCard key={i} {...o}/></SwiperSlide>)}
+        className='relative hover:scale-150 aspect-[1/0.6] !w-full !max-w-[34rem]'><ProjectCard key={i} {...o}/></SwiperSlide>)}
          <SwiperBar/>
       </Swiper>
        </Box>
-
+      <style>{`.carousel-container{
+       background:linear-gradient(transparent 50%,black 50%);
+      }`}</style>
         </section>
      );
 }

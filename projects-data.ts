@@ -9,7 +9,7 @@
  {
     url:'p33.png',
     title:'Music app',
-    tecs:['React','Next.js','Tailwind.css','Mui react','Redux','GSAP','Mongodb','Node.js','React-query'],
+    tecs:['React','Next.js','Tailwind.css','MUI react','Redux','GSAP','Mongodb','Node.js','React-query'],
     subt:'Published: 12/07/2022',
     surl:'https://music-app-wb3t.vercel.app/'
  },
@@ -20,4 +20,11 @@
     subt:'Published: 12/09/2022',
     surl:'https://rock-paper-scissor-omega.vercel.app/'
  },
+ {
+   url:'p4.png',
+   title:'Landing page',
+   tecs:['React','Tailwind.css','MUI react'],
+   subt:'Published: 3/12/2022',
+   surl:'https://app-test-tau-ruddy.vercel.app/'
+},
  ] 
