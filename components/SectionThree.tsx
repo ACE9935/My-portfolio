@@ -32,7 +32,7 @@ function SectionThree() {
   },[])
 
     return ( 
-        <section id='Skills' className="px-6 sm:px-14 pt-14 pb-36 carousel-container">
+        <section id='Skills' className="px-6 sm:px-14 pt-14 pb-36">
         <Box className="flex justify-center pb-12">
           <Typography component='h1' variant='h3'>Recent <span className="text-main">Projects</span></Typography>
         </Box>
@@ -63,9 +63,6 @@ function SectionThree() {
          <SwiperBar/>
       </Swiper>
        </Box>
-      <style>{`.carousel-container{
-       background:linear-gradient(transparent 50%,black 50%);
-      }`}</style>
         </section>
      );
 }
