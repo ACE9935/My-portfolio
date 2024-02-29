@@ -28,7 +28,7 @@
    surl:'https://recipes-app-three-pearl.vercel.app/'
 },
  {
-   url:'p88.png',
+   url:'p88.jpg',
    title:'Landing page',
    tecs:['React','Tailwind.css','MUI react'],
    subt:'Published: 3/12/2023',
