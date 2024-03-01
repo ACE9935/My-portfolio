@@ -2,20 +2,16 @@ const nodemailer = require("nodemailer");
 const validator = require('validator');
 import type { NextApiRequest, NextApiResponse } from 'next'
 
-const variableValue = process.env.PWD;
-
 const transport = nodemailer.createTransport({
     service: "Gmail",
-    host: "smtp.gmail.com",
-    port: 465,
-    secure:true,
     auth: {
       user: 'anaselmouden99@gmail.com',
-      pass:"sdf",
+      pass: 'kcsuqmohvwnxomdl',
     },
     tls: {
-      rejectUnauthorized: false
-  }
+        rejectUnauthorized: false
+    }
+
   });
 
   interface ExtendedNextApiRequest extends NextApiRequest {
@@ -45,37 +41,13 @@ interface error {
     if(!validator.isEmail(email)) error.email='Email is not Valid'
     if(message.length<10) error.message='Message is too short'
     if(error.name || error.email || error.message) throw error
-    await new Promise((resolve, reject) => {
     transport.sendMail({
       from: 'anaselmouden99@gmail.com',
       to: 'anaselmouden99@gmail.com',
       subject: "Message from: "+name+' | Email: '+email,
       html: message,
-    },(err:any, info:any) => {
-      if (err) {
-        console.error(err);
-        reject(err);
-      } else {
-        resolve(info);
-      }
-    });
-  });
-    await new Promise((resolve, reject) => {
-    transport.sendMail({
-      from: 'anaselmouden99@gmail.com',
-      to: email,
-      subject: "Thanks for reaching me out",
-      html: "<p>Thank you for reaching out to me! I appreciate you taking the time to contact me through my website. Your message has been received, and I want to assure you that I'll adress a respnse as quick as possible.<br><br>Anas<p/>",
-    },(err:any, info:any) => {
-      if (err) {
-        console.error(err);
-        reject(err);
-      } else {
-        resolve(info);
-      }
-    }
-    )
-  });
+    }).catch((err:any) => console.log(err));
+
     console.log('Sent')
     return res.status(401).json({message:'Message sent'})
   }
