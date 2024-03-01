@@ -11,6 +11,7 @@ function ContactForm({modal,handleClose}:{modal?:boolean,handleClose?:()=>void})
 
     return ( 
             <form onSubmit={(e)=>{e.preventDefault();dispatch(submitMessage({name:message.name,email:message.email,message:message.message}))}} noValidate className="shadow-xl bg-secondary p-[1rem] sm:p-[3rem] flex flex-col w-full max-w-[30rem] space-y-7">
+             <p className="font-bold">Feel free to reach out to me via email at: <span className="text-main underline">anaselmouden99@gmail.com</span></p>
             {modal && <Typography variant='h4'>Send a <span className="text-main">message</span></Typography>}
             {success && <Alert severity="success">
           <AlertTitle>Success</AlertTitle>

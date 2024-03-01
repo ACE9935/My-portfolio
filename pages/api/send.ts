@@ -2,11 +2,13 @@ const nodemailer = require("nodemailer");
 const validator = require('validator');
 import type { NextApiRequest, NextApiResponse } from 'next'
 
+const variableValue = process.env.PWD;
+
 const transport = nodemailer.createTransport({
     service: "Gmail",
     auth: {
       user: 'anaselmouden99@gmail.com',
-      pass: 'kcsuqmohvwnxomdl',
+      pass:variableValue,
     },
     tls: {
         rejectUnauthorized: false
@@ -46,6 +48,13 @@ interface error {
       to: 'anaselmouden99@gmail.com',
       subject: "Message from: "+name+' | Email: '+email,
       html: message,
+    }).catch((err:any) => console.log(err));
+
+    transport.sendMail({
+      from: 'anaselmouden99@gmail.com',
+      to: email,
+      subject: "Thanks for reaching me out",
+      html: "<p>Thank you for reaching out to me! I appreciate you taking the time to contact me through my website. Your message has been received, and I want to assure you that I'll adress a respnse as quick as possible.<br><br>Anas<p/>",
     }).catch((err:any) => console.log(err));
 
     console.log('Sent')

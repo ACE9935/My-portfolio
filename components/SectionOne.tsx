@@ -21,12 +21,12 @@ function SectionOne() {
   const handleClose = () => setOpen(false);
 
     return ( 
-        <section className='relative pb-[5rem] pt-[10rem] w-full m-auto max-w-[100rem] grid grid-cols-1 lg:grid-cols-2 sm:px-12'>
+        <section className='relative pb-[5rem] pt-[7rem] md:pt-[10rem] w-full m-auto max-w-[100rem] grid grid-cols-1 lg:grid-cols-2 sm:px-12'>
         <motion.article
         variants={container}
         animate='visible'
         initial='hidden'
-        className="relative pb-14 px-5 p-5 z-[2] w-full max-w-[40rem]">
+        className="relative pb-14 px-[2rem] sm:px-5 pt-5 z-[2] w-full max-w-[40rem]">
         <motion.h2 variants={item} className='text-[1.6rem] text-white'>Hello <span className="text-main">I&apos;m </span></motion.h2>
         <motion.h1 variants={item} className="text-main text-[3.5rem] font-bold">Anas Elmouden</motion.h1>
         <motion.h1 variants={item} className="font-[500] pb-6 text-[1.8rem] text-white">A Creative Developer With Creative Ideas</motion.h1>
@@ -38,7 +38,7 @@ function SectionOne() {
         sx={{
             boxShadow:'0px 8px 15px 0px #4fd78eae'
         }}
-        className="text-white font-bold bg-main hover:-translate-y-2 transition duration-50" variant="contained">Let&apos;s Talk</Button>
+        className="text-white !font-bold bg-main hover:-translate-y-2 transition duration-50" variant="contained">Let&apos;s Talk</Button>
         </motion.article>
         
         <motion.img
