@@ -6,6 +6,8 @@ const variableValue = process.env.PWD;
 
 const transport = nodemailer.createTransport({
     service: "Gmail",
+    host: "smtp.gmail.com",
+    port: 465,
     auth: {
       user: 'anaselmouden99@gmail.com',
       pass:variableValue,
