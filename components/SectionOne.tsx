@@ -38,7 +38,7 @@ function SectionOne() {
         sx={{
             boxShadow:'0px 8px 15px 0px #4fd78eae'
         }}
-        className="text-white !font-bold bg-main hover:-translate-y-2 transition duration-50" variant="contained">Let&apos;s Talk</Button>
+        className="text-white !font-bold bg-main hover:-translate-y-2 !transition !duration-50" variant="contained">Let&apos;s Talk</Button>
         </motion.article>
         
         <motion.img
