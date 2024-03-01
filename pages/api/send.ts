@@ -50,6 +50,7 @@ interface error {
       html: message,
     }).catch((err:any) => console.log(err));
 
+    
     transport.sendMail({
       from: 'anaselmouden99@gmail.com',
       to: email,
