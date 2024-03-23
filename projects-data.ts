@@ -14,7 +14,7 @@
    surl:'https://inkinspirehub.vercel.app/'
 },
  {
-    url:'misc.png',
+    url:'app-misc.png',
     title:'Misc - Music app',
     tecs:['React','Next.js 14','Tailwind.css','MUI react','Redux','GSAP','Mongodb','Node.js','React-query'],
     subt:'Published: 23/03/2024',
