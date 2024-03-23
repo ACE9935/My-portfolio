@@ -14,11 +14,11 @@
    surl:'https://inkinspirehub.vercel.app/'
 },
  {
-    url:'p33.png',
-    title:'Music app',
-    tecs:['React','Next.js','Tailwind.css','MUI react','Redux','GSAP','Mongodb','Node.js','React-query'],
-    subt:'Published: 12/07/2023',
-    surl:'https://music-app-nine-tau.vercel.app/'
+    url:'misc.png',
+    title:'Misc - Music app',
+    tecs:['React','Next.js 14','Tailwind.css','MUI react','Redux','GSAP','Mongodb','Node.js','React-query'],
+    subt:'Published: 23/03/2024',
+    surl:'https://misc-app.vercel.app/'
  },
  {
    url:'p1.png',
