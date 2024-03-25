@@ -9,6 +9,7 @@ function ProjectCard({url,title,subt,tecs,surl}:{url:string,title:string,subt:st
     return ( 
         <Box 
         component='a'
+        target="_blank"
         href={swiperSlide.isActive?surl:undefined}
         sx={{
             '&':{
