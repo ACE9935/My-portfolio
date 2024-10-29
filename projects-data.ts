@@ -21,6 +21,13 @@
     surl:'https://misc-app.vercel.app/'
  },
  {
+   url:'p99.png',
+   title:'True Flowing - Client Engagement App',
+   tecs:['React','Next.js 14','Tailwind.css','MUI react','Redux','Firebase','Node.js'],
+   subt:'Published: 29/10/2024',
+   surl:'https://true-flowing.vercel.app/'
+},
+ {
    url:'p1.png',
    title:'Moroccan recipes app',
    tecs:['React','Next.js','Bootstrap'],
