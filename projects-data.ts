@@ -28,11 +28,11 @@
    surl:'https://true-flowing.vercel.app/'
 },
  {
-   url:'p1.png',
+   url:'recipes.png',
    title:'Moroccan recipes app',
-   tecs:['React','Next.js','Bootstrap'],
-   subt:'Published: 12/04/2022',
-   surl:'https://recipes-app-three-pearl.vercel.app/'
+   tecs:['React','Node.js','Firebase','Tailwind.css','MUI react'],
+   subt:'Published: 20/11/2024',
+   surl:'https://savor-morocco.vercel.app/'
 },
  {
    url:'p88.jpg',
