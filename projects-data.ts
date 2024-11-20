@@ -30,7 +30,7 @@
  {
    url:'recipes.png',
    title:'Moroccan recipes app',
-   tecs:['React','Node.js','Firebase','Tailwind.css','MUI react'],
+   tecs:['React','Node.js','Firebase','Tailwind.css','MUI react','Vite'],
    subt:'Published: 20/11/2024',
    surl:'https://savor-morocco.vercel.app/'
 },
