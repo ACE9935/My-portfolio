@@ -1,18 +1,9 @@
-const nodemailer = require("nodemailer");
 const validator = require('validator');
 import type { NextApiRequest, NextApiResponse } from 'next'
+import { Resend } from 'resend';
+import MagicLinkEmail from './email';
 
-const transport = nodemailer.createTransport({
-    service: "Gmail",
-    auth: {
-      user: 'anaselmouden99@gmail.com',
-      pass: process.env.PWD,
-    },
-    tls: {
-        rejectUnauthorized: false
-    }
-
-  });
+const resend = new Resend(process.env.RESEND_API_KEY);
 
   interface ExtendedNextApiRequest extends NextApiRequest {
     body:
@@ -41,14 +32,15 @@ interface error {
     if(!validator.isEmail(email)) error.email='Email is not Valid'
     if(message.length<10) error.message='Message is too short'
     if(error.name || error.email || error.message) throw error
-    transport.sendMail({
-      from: 'anaselmouden99@gmail.com',
-      to: 'anaselmouden99@gmail.com',
-      subject: "Message from: "+name+' | Email: '+email,
-      html: message,
-    }).catch((err:any) => console.log(err));
+    
+     await resend.emails.send({
+      from: `noreply@trueflowing.com`,
+      to: "anaselmouden99@gmail.com",
+      subject: `You have a new message +1`,
+      react: MagicLinkEmail({name,email,text:message})
+    })
 
-    console.log('Sent')
+    console.log('Message sent successfully!')
     return res.status(401).json({message:'Message sent'})
   }
   catch{
