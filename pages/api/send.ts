@@ -1,7 +1,7 @@
 const validator = require('validator');
 import type { NextApiRequest, NextApiResponse } from 'next'
 import { Resend } from 'resend';
-import MagicLinkEmail from './email';
+import MagicLinkEmail from '../email';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -36,6 +36,7 @@ interface error {
      await resend.emails.send({
       from: `noreply@trueflowing.com`,
       to: "anaselmouden99@gmail.com",
+      text:"You have a new message",
       subject: `You have a new message +1`,
       react: MagicLinkEmail({name,email,text:message})
     })
