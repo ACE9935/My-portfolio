@@ -39,6 +39,7 @@ import { createSlice, PayloadAction,createAsyncThunk } from '@reduxjs/toolkit'
               'Content-Type': 'application/json'
             },
             body: JSON.stringify({messageInfo})
+            
           })
           return await rawResponse.json()
           
