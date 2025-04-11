@@ -26,7 +26,7 @@ function SectionFour() {
           <span className="text-main">message</span></Typography> 
           <ContactForm/>
         </Box>
-        <Typography className="!text-xl text-slate-300 font-bold pb-10">Last update February 2024</Typography>
+        <Typography className="!text-xl text-slate-300 font-bold pb-10">Last update April 2025</Typography>
         <Typography className="!text-xl text-white font-bold text-end">Built with React by me ✌️</Typography>
         <a href="https://github.com/ACE9935"><IconButton><GitHubIcon className="text-white !text-5xl"/></IconButton><span className="text-white !font-bold">ACE9935</span></a>
         </div>
