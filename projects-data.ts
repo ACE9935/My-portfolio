@@ -34,6 +34,13 @@
    subt:'Published: 20/11/2024',
    surl:'https://savor-morocco.vercel.app/'
 },
+{
+   url:'p45.png',
+   title:'Images App - AI Image Classifier',
+   tecs:['Vue','Java SpringBoot','PostgreSQL','Tailwind.css','Firebase','Node.js','TensorFlow','Python'],
+   subt:'Published: 12/04/2025',
+   surl:'https://images-app-production.up.railway.app/'
+},
  {
    url:'p88.jpg',
    title:'Landing page',
