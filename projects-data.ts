@@ -8,12 +8,12 @@
       gurl:"https://github.com/ACE9935/app-misc"
    },
    {
-      url:'p66.jpg',
-      title:'Games app',
-      tecs:['React','Tailwind.css','Redux'],
-      subt:'Published: 1/2/2024',
-      surl:'https://app-games-coral.vercel.app/',
-      gurl:"https://github.com/ACE9935/app-games/"
+      url:'p45.png',
+      title:'Images App - AI Image Classifier',
+      tecs:['Vue','Java SpringBoot','PostgreSQL','Tailwind.css','Vite','Firebase','Node.js','TensorFlow','Python'],
+      subt:'Published: 12/04/2025',
+      surl:'https://images-app-production.up.railway.app/',
+      gurl:"https://github.com/ACE9935/Images-App"
    },
  {
    url:'p55.jpg',
@@ -40,12 +40,12 @@
    gurl:"https://github.com/ACE9935/Savor-Morocco"
 },
 {
-   url:'p45.png',
-   title:'Images App - AI Image Classifier',
-   tecs:['Vue','Java SpringBoot','PostgreSQL','Tailwind.css','Vite','Firebase','Node.js','TensorFlow','Python'],
-   subt:'Published: 12/04/2025',
-   surl:'https://images-app-production.up.railway.app/',
-   gurl:"https://github.com/ACE9935/Images-App"
+   url:'p66.jpg',
+   title:'Games app',
+   tecs:['React','Tailwind.css','Redux'],
+   subt:'Published: 1/2/2024',
+   surl:'https://app-games-coral.vercel.app/',
+   gurl:"https://github.com/ACE9935/app-games/"
 },
  {
    url:'p88.jpg',
