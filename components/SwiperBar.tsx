@@ -1,4 +1,4 @@
-import { Typography,Box, Paper } from "@mui/material";
+import { Box } from "@mui/material";
 import { useSwiper } from "swiper/react";
 
 function SwiperBar() {

@@ -1,19 +1,13 @@
-import { Typography,Box, Paper } from "@mui/material";
+import { Typography,Box} from "@mui/material";
 import { useEffect } from "react";
-import Image from "next/image";
 import gsap from "gsap";
-import AnimateText from "./AnimateText";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import { data } from "../projects-data";
 import ProjectCard from "./ProjectCard";
-import Skills from "./Skills";
-import { Swiper, SwiperSlide,useSwiper } from "swiper/react";
-import { EffectCoverflow, Pagination,Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import SwiperBar from "./SwiperBar";
 
 function SectionThree() {     
   
@@ -32,37 +26,17 @@ function SectionThree() {
   },[])
 
     return ( 
-        <section id='Skills' className="px-6 sm:px-14 pt-14 pb-36">
+        <section id='Skills' className="px-6 flex flex-col items-center sm:px-14 pt-14 pb-36">
         <Box className="flex justify-center pb-12">
           <Typography component='h1' variant='h3'>Recent <span className="text-main">Projects</span></Typography>
         </Box>
 
-       <Box>
-       <Swiper
-        initialSlide={1}
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={'auto'}
-        freeMode
-        loop
-        autoplay
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        modules={[EffectCoverflow, Pagination,Navigation]}
-        className="mySwiper max-w-[100rem]"
+       <div
+        className="max-w-[100rem] gris-cols-1 md:grid-cols-2 xl:grid-cols-3 grid gap-3"
       >
-        {data.map((o,i)=><SwiperSlide
-        key={i}
-        className='relative hover:scale-150 aspect-[1/0.6] !w-full !max-w-[34rem]'><ProjectCard key={i} {...o}/></SwiperSlide>)}
-         <SwiperBar/>
-      </Swiper>
-       </Box>
+        {data.map((o,i)=><ProjectCard key={i} {...o}/>)}
+      </div>
+
         </section>
      );
 }
