@@ -4,6 +4,7 @@ import gsap from "gsap";
 import ScrollTrigger from "gsap/dist/ScrollTrigger";
 import ContactForm from "./ContactForm";
 import GitHubIcon from '@mui/icons-material/GitHub';
+import { LinkedIn } from "@mui/icons-material";
 
 function SectionFour() {
     gsap.registerPlugin(ScrollTrigger);
@@ -28,7 +29,8 @@ function SectionFour() {
         </Box>
         <Typography className="!text-xl text-slate-300 font-bold pb-10">Last update April 2025</Typography>
         <Typography className="!text-xl text-white font-bold text-end">Built with React by me ✌️</Typography>
-        <a href="https://github.com/ACE9935"><IconButton><GitHubIcon className="text-white !text-5xl"/></IconButton><span className="text-white !font-bold">ACE9935</span></a>
+        <a target="_blank" href="https://github.com/ACE9935"><IconButton><GitHubIcon className="text-white !text-5xl"/></IconButton></a>
+        <a target="_blank" href="https://www.linkedin.com/in/anas-el-mouden-20a246229/"><IconButton><LinkedIn className="text-white !text-5xl"/></IconButton></a>
         </div>
         </div>
         </section>
