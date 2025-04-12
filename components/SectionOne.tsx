@@ -1,7 +1,6 @@
-import { useRef,useEffect, useState } from "react";
-import { Typography,Box, Divider, Button,useTheme, Modal } from "@mui/material";
+import { useState } from "react";
+import { Box, Button,useTheme, Modal } from "@mui/material";
 import {motion} from 'framer-motion'
-import AnimateText from "./AnimateText";
 import ContactForm from "./ContactForm";
 
 const item={
@@ -42,8 +41,8 @@ function SectionOne() {
         </motion.article>
         
         <motion.img
-        src='esd.png'
-        className='max-w-[23rem] justify-self-end'/>
+        src='me.png'
+        className='max-w-[23rem] rounded-full justify-self-end'/>
         <Modal
         open={open}
         onClose={handleClose}
