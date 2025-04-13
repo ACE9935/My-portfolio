@@ -1,7 +1,7 @@
-import { Toolbar, Typography,Stack,Box,styled, useScrollTrigger, Slide, IconButton } from '@mui/material';
+import { Toolbar, Stack,Box,styled, IconButton } from '@mui/material';
 import AppBar from '@mui/material/AppBar';
 import { Container } from '@mui/system';
-import { ReactElement, SetStateAction, useEffect, useRef } from 'react';
+import { ReactElement, SetStateAction} from 'react';
 import MenuIcon from '@mui/icons-material/Menu';
 import AppLogo from './Logo';
 
@@ -22,7 +22,7 @@ function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
     return ( 
        <AppBar className='!z-[10] !bg-secondary shadow-none pt-6 pb-1'>
         <Container>
-            <Toolbar sx={{justifyContent:'space-between',alignItems:'unset'}}>
+            <Toolbar sx={{justifyContent:'space-between',alignItems:'center'}}>
                 <AppLogo/>
                  <Stack component='ul'
                  id="navbar"
@@ -30,7 +30,7 @@ function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
                    display:{xs:'none',md:'flex'}
                  }} direction='row' spacing={0}>
                     {['Bio','Skills','Contact'].map(i=>
-                        <a key={i} href={'#'+i} className='w-full px-4 cursor-pointer text-white font-[600] nav-link h-full grid place-items-center'>{i}</a>)}
+                        <a key={i} href={'#'+i} className='w-full rounded-full px-4 py-2 cursor-pointer h-fit text-white font-[600] nav-link grid place-items-center'>{i}</a>)}
                  </Stack>
                  <IconButton
                  onClick={()=>setOpen(true)}
