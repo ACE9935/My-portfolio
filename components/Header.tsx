@@ -21,7 +21,7 @@ function Header({setOpen}:{setOpen: React.Dispatch<SetStateAction<boolean>>}) {
 
     return ( 
        <AppBar className='!z-[10] !bg-secondary shadow-none pt-6 pb-1'>
-        <Container>
+        <Container className="!w-full !max-w-[100rem]">
             <Toolbar sx={{justifyContent:'space-between',alignItems:'center'}}>
                 <AppLogo/>
                  <Stack component='ul'
