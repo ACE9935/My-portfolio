@@ -50,7 +50,7 @@
  {
    url:'faqapp.png',
    title:'FAQ Generator App',
-   tecs:['React','Tailwind.css','MUI react','Supabase','Node.js','Vite', 'PostgreSQL'],
+   tecs:['React','Tailwind.css','MUI react','Supabase','Node.js','Vite', 'PostgreSQL', 'Gemini API'],
    subt:'Published: 08/06/2025',
    surl:'https://faq-ai-app.vercel.app',
    gurl:"https://github.com/ACE9935/faq-ai-app"
