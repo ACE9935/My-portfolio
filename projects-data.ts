@@ -43,15 +43,23 @@
    url:'p66.jpg',
    title:'Games app',
    tecs:['React','Tailwind.css','Redux'],
-   subt:'Published: 1/2/2024',
+   subt:'Published: 01/02/2024',
    surl:'https://app-games-coral.vercel.app/',
    gurl:"https://github.com/ACE9935/app-games/"
+},
+ {
+   url:'faqapp.png',
+   title:'FAQ Generator App',
+   tecs:['React','Tailwind.css','MUI react','Supabase','Node.js','Vite', 'PostgreSQL'],
+   subt:'Published: 08/06/2025',
+   surl:'https://faq-ai-app.vercel.app',
+   gurl:"https://github.com/ACE9935/faq-ai-app"
 },
  {
    url:'p88.jpg',
    title:'Coffee Shop Landing page',
    tecs:['React','Tailwind.css','MUI react'],
-   subt:'Published: 3/12/2023',
+   subt:'Published: 03/12/2023',
    surl:'https://app-test-tau-ruddy.vercel.app/',
    gurl:"https://github.com/ACE9935/app-test"
 },
