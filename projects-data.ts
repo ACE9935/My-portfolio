@@ -63,4 +63,12 @@
    surl:'https://app-test-tau-ruddy.vercel.app/',
    gurl:"https://github.com/ACE9935/app-test"
 },
+ {
+   url:'mosaic.png',
+   title:'Mosaic Puzzle Game',
+   tecs:['C','Web Assembly','HTML','CSS'],
+   subt:'Published: 03/04/2024',
+   surl:'https://anas-el-mouden.emi.u-bordeaux.fr/make-game-web/demo.html',
+   gurl:"https://github.com/ACE9935/Mosaic-Puzzle-Game"
+},
  ] 
