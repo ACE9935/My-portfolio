@@ -64,7 +64,7 @@
    gurl:"https://github.com/ACE9935/app-test"
 },
  {
-   url:'mosaic.PNG',
+   url:'mosaic3.png',
    title:'Mosaic Puzzle Game',
    tecs:['C','Web Assembly','HTML','CSS'],
    subt:'Published: 03/04/2024',
